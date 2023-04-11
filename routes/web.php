@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +39,8 @@ Route::get('/go', function () {
 
     ]);
 });
+
+/*
+Disini Route /user akan menampilkan value dari kelas userController dari file controller.
+*/
+Route::get('/user', [userController::class,'index']);
