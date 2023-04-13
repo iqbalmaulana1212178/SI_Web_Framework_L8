@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Hamcrest\Core\JavaForm;
 use Illuminate\Http\Request;
 
 class userController extends Controller
@@ -16,3 +17,5 @@ class userController extends Controller
         return 'Halo ini adalah controller jika tadi saya mencetak teks dari Routes sekarang saya akan mencetak teks dari Controller';
     }
 }
+
+

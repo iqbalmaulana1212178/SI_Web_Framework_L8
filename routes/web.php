@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ManagementUserController;
 use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,3 +45,8 @@ Route::get('/go', function () {
 Disini Route /user akan menampilkan value dari kelas userController dari file controller.
 */
 Route::get('/user', [userController::class,'index']);
+
+//ini adalah routing untuk mengarahkan form sesuai dengan fungsi dan controller
+Route::get('/users',[ManagementUserController::class,'index']);
+Route::get('/users',[ManagementUserController::class,'create']);
+
