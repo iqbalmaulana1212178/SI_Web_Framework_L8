@@ -17,6 +17,8 @@
         {{-- Contoh blade templating adalah memanggil value yang ada di controller dengan dua kurung kurawal
             lalu dilanjutkan dengan nama variabel {{ $nama_variabel }} --}}
         <p>Nama : {{ $nama }}</p>
+        <p>NIM : {{ $nim }}</p>
+        <p>Golongan : {{ $kelas }}</p>
         <p>Mata Kuliah : </p>
         <ul>
             @foreach ($Matkul as $item)

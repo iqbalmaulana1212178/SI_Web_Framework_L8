@@ -12,6 +12,8 @@ class ManagementUserController extends Controller
         $matkul  = ["Pemrograman Dasar", "Android Framework Flutter", "Jetpack Compose", "ExpressJS"];
         return view('home', [
             "nama" => "Mochamad Iqbal Maulana",
+            "nim" => "E41212178",
+            "kelas"=>"Bondowoso B",
             "Matkul" => $matkul
         ]);
     }
