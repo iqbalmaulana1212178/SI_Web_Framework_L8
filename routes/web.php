@@ -48,5 +48,8 @@ Route::get('/user', [userController::class,'index']);
 
 //ini adalah routing untuk mengarahkan form sesuai dengan fungsi dan controller
 Route::get('/users',[ManagementUserController::class,'index']);
-Route::get('/users',[ManagementUserController::class,'create']);
+Route::get('/users{id}',[ManagementUserController::class,'create']);
+
+// Method route ini akan menampilkan folder home.blade.php
+Route::get('home',[ManagementUserController::class, 'index']);
 

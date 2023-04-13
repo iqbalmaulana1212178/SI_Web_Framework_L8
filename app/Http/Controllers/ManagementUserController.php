@@ -7,7 +7,13 @@ use Illuminate\Http\Request;
 class ManagementUserController extends Controller
 {
     public function index(){
-        return "Method ini nantianya akan digunakan untuk mengambil semua data user";
+        //Value method ini akan ditampilkan pada html dengan blade templating dengan cara memanggil variable {{ $nama_variabel }}
+
+        $matkul  = ["Pemrograman Dasar", "Android Framework Flutter", "Jetpack Compose", "ExpressJS"];
+        return view('home', [
+            "nama" => "Mochamad Iqbal Maulana",
+            "Matkul" => $matkul
+        ]);
     }
 
     public function create(){
