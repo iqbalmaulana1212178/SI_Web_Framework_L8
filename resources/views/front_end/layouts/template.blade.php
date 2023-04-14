@@ -39,6 +39,9 @@
 
 <body>
 
+    {{-- sintaks  @include('front_end/layouts.navbar')
+      @yield('content') disebut sebagai blade templating jadi kita tidak perlu melakukan copy-paste styling web sebelumnya kita hanya perlu memanggil content yang telah ada 
+      pada layouts --}}
     <!-- ======= Header ======= -->
     @include('front_end/layouts.navbar')
 
