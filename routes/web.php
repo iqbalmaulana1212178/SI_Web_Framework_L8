@@ -51,5 +51,6 @@ Route::get('/users',[ManagementUserController::class,'index']);
 Route::get('/users{id}',[ManagementUserController::class,'create']);
 
 // Method route ini akan menampilkan folder home.blade.php
-Route::get('home',[ManagementUserController::class, 'index']);
+Route::get('/home',[ManagementUserController::class, 'index']);
+
 
