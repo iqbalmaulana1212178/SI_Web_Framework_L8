@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ManagementUserController;
 use App\Http\Controllers\userController;
@@ -58,3 +59,5 @@ Route::get('/home', [ManagementUserController::class, 'index']);
 
 // ini akan me routing ke file home yang ada pada frontEnd
 Route::get('/homok', [HomeController::class, 'index']);
+
+Route::get('/dashboard',[DashboardController::class,'index']);
