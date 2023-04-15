@@ -1,3 +1,5 @@
+{{-- Dengan memanggil @extend kita tidak perlu melakukan copas
+    code html telah di ambil dari template --}}
 @extends('back_end/layouts.template')
 
 @section('content')

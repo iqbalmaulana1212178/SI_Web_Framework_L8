@@ -60,4 +60,5 @@ Route::get('/home', [ManagementUserController::class, 'index']);
 // ini akan me routing ke file home yang ada pada frontEnd
 Route::get('/homok', [HomeController::class, 'index']);
 
+// route dashboard akan dipanggil dengan controller dan akan muncul di web browser
 Route::get('/dashboard',[DashboardController::class,'index']);
