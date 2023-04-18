@@ -24,11 +24,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # SI_Web_Framework_L8
 "# SI_Web_Framework_L8" 
 
-<h2> HASIL MINGGU PERTAMA </h2>
-<a href='https://postimg.cc/8jqNTYPL' target='_blank'><img src='https://i.postimg.cc/8jqNTYPL/image.png' border='0' alt='image'/></a>
+<h2> HASIL Minggu 3/2 </h2>
+<a href='https://postimg.cc/6799P10w' target='_blank'><img src='https://i.postimg.cc/6799P10w/image.png' border='0' alt='image'/></a>
 
-<h2> HASIL MINGGU KEDUA </h2>
-<a href='https://postimg.cc/8jqNTYPL' target='_blank'><img src='https://i.postimg.cc/8jqNTYPL/image.png' border='0' alt='image'/></a>
+<h2> HASIL Minggu 3/3 </h2>
+<a href='https://postimg.cc/ftmB05Gt' target='_blank'><img src='https://i.postimg.cc/ftmB05Gt/image.png' border='0' alt='image'/></a>
+
+<h2> HASIL Minggu 3/3 </h2>
+
+
 
 
 
