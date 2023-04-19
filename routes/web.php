@@ -38,8 +38,8 @@ Route::get('/go', function () {
             'namaTop' => 'IqLRV8',
             'nama' => 'Mochamad Iqbal Maulana',
             'nim' => 'E41212178',
-            'kampus' => 'POLIJE Bondowoso',
-            'asal' => 'Lumajang'
+            'kampus' => 'POLIJE',
+            'asal' => 'Bandung'
 
         ]
     );
@@ -52,6 +52,7 @@ Route::get('/user', [userController::class, 'index']);
 
 //ini adalah routing untuk mengarahkan form sesuai dengan fungsi dan controller
 Route::get('/users', [ManagementUserController::class, 'index']);
+
 Route::get('/users{id}', [ManagementUserController::class, 'create']);
 
 // Method route ini akan menampilkan folder home.blade.php
@@ -62,3 +63,5 @@ Route::get('/homok', [HomeController::class, 'index']);
 
 // route dashboard akan dipanggil dengan controller dan akan muncul di web browser
 Route::get('/dashboard',[DashboardController::class,'index']);
+
+Route::get('/login', 'LoginController@authenticate');

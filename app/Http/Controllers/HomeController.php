@@ -6,10 +6,23 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
-        /* Controller ini akan mengembalikan view dari file front_end/home.blade.php sehingga bootstrap templating dapat 
-         tampil di web */
-        return view('front_end.home');
+        return view('home');
     }
 }
