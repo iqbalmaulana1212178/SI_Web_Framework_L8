@@ -12,6 +12,9 @@ class Authenticate extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
+
+    //  Authenticate ini digunakan untuk mengatur pengalihan (redirect) pengguna ke halaman login 
+    // jika mereka tidak terotentikasi (belum login) dan mengakses halaman yang membutuhkan otentikasi.
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {

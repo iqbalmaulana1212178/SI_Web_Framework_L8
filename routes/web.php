@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -46,8 +47,21 @@ Route::get('/categories', function () {
     ]);
 });
 
-// Route::get('/login',[LoginController::class,'index']);
-// Route::get('/register',[RegisterController::class,'index']);
+// langkah pertama yang harus dilakukan sebelum membuat login page adalah membuat route login dahulu
+// terdapat 2 tipe routing yaitu get untuk menampilkan dan post untuk mencocokan data
+// terdapat middleware yang berguna untuk menghalau pengguna yang belum login untuk mengakses /dashboard
+Route::get('/login',[LoginController::class,'index'])->name('login')->middleware('guest');
+Route::post('/login',[LoginController::class,'authenticate']);
+
+
+Route::post('/logout',[LoginController::class,'logout']);
+
+// Selanjutnya adalah route register disini menangani data pengguna yang belum terdaftar dalam sistem
+// middleware pada proses registrasi (register) digunakan untuk memproses dan memvalidasi data yang dikirimkan oleh pengguna sebelum data tersebut disimpan ke dalam database. 
+Route::get('/register',[RegisterController::class,'index'])->middleware('guest');
+Route::post('/register',[RegisterController::class,'store']);
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
 
 
