@@ -1,1 +1,0 @@
-<h1>WELCOME IKUBARU KUN</h1>
